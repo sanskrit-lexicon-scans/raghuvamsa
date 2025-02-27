@@ -22,10 +22,10 @@ function display_ipage_id(indexes) {
  let v = vp.substring(0,1);
  let p = vp.substring(1,4);
  let ip = parseInt(p);
- // p is External page number. Compute ipage for yajn
- // first verse is internal page 3, external page 29
+ // p is External page number. Compute ipage for raghuvamsa
+ // first verse is internal page 1, external page 24
  // Assume this relation holds for all pages.
- let ipage = ip - 26;
+ let ipage = ip - 23;
  //let html = `<p>${prevlink} &nbsp; ${nextlink}</p>`;
  let html = `<p>${prevlink} <span class="nppage">Page ${ipage}</span> ${nextlink}</p>`;
  let elt = document.getElementById('ipageid');
